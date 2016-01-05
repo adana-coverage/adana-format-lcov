@@ -9,5 +9,5 @@ const data = JSON.parse(readFileSync(fixture, 'utf8'));
 
 it('should filter', () => {
   const result = lcov(data);
-  console.log(result);
+  expect(result).to.contain('SF: src/instrumenter.js');
 });
