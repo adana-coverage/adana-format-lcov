@@ -18,7 +18,7 @@
     "test": "npm run lint && npm run spec"
   },
   "dependencies": {
-    "adana-analyze": "^0.1.0"
+    "adana-analyze": "^0.1.1"
   },
   "devDependencies": {
     "babel-cli": "^6.0.2",
