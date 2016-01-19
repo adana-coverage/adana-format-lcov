@@ -1,6 +1,6 @@
 {
   "name": "adana-format-lcov",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Generate lcov coverage from adana data.",
   "repository": "izaakschroeder/adana-lcov",
   "license": "CC0-1.0",
