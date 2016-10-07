@@ -35,7 +35,10 @@ export function branches(data) {
 export default function lcov(coverage) {
   const files = Object.keys(coverage);
   return files.map(file => {
-    const t = tags(coverage[file].locations, [
+    const locations = coverage[file].locations.filter(({tags}) => {
+      return tags.indexOf('ignore') === -1;
+    });
+    const t = tags(locations, [
       'line',
       'function',
       'branch',
